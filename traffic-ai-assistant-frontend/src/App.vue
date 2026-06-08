@@ -1,28 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ChatWindow />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChatWindow from './components/ChatWindow.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    ChatWindow,
+  },
 }
 </script>
 
 <style>
+@import './assets/styles/bmw.css';
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  overflow: hidden;
 }
 </style>

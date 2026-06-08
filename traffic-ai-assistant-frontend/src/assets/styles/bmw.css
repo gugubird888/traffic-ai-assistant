@@ -1,0 +1,167 @@
+/* BMW Design System Variables */
+:root {
+  --bmw-white: #ffffff;
+  --bmw-blue: #1c69d4;
+  --bmw-blue-focus: #0653b6;
+  --bmw-black: #262626;
+  --bmw-gray: #757575;
+  --bmw-silver: #bbbbbb;
+  --bmw-dark: #1a1a1a;
+  --bmw-dark-surface: #0d0d0d;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--bmw-black);
+  background: var(--bmw-white);
+  line-height: 1.15;
+}
+
+/* BMW Typography */
+.bmw-display {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 3.75rem;
+  line-height: 1.30;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.bmw-heading {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.30;
+}
+
+.bmw-nav {
+  font-weight: 900;
+  font-size: 1.13rem;
+  line-height: 1.30;
+}
+
+.bmw-body {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.15;
+}
+
+.bmw-button {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.20;
+}
+
+/* BMW Buttons */
+.btn-bmw {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.20;
+  color: var(--bmw-white);
+  background: var(--bmw-blue);
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-bmw:hover {
+  background: var(--bmw-blue-focus);
+}
+
+.btn-bmw:focus {
+  outline: 2px solid var(--bmw-blue-focus);
+  outline-offset: 2px;
+}
+
+.btn-bmw-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.20;
+  color: var(--bmw-white);
+  background: transparent;
+  border: 1px solid var(--bmw-white);
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-bmw-outline:hover {
+  background: var(--bmw-white);
+  color: var(--bmw-black);
+}
+
+/* BMW Input */
+.input-bmw {
+  width: 100%;
+  padding: 12px 16px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.15;
+  color: var(--bmw-black);
+  background: var(--bmw-white);
+  border: 1px solid var(--bmw-silver);
+  border-radius: 0;
+  transition: border-color 0.2s ease;
+}
+
+.input-bmw:focus {
+  outline: none;
+  border-color: var(--bmw-blue);
+}
+
+.input-bmw::placeholder {
+  color: var(--bmw-gray);
+}
+
+/* BMW Card */
+.card-bmw {
+  background: var(--bmw-white);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* BMW Dark Section */
+.section-dark {
+  background: var(--bmw-dark);
+  color: var(--bmw-white);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bmw-gray);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--bmw-silver);
+}

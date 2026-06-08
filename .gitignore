@@ -24,3 +24,7 @@ node_modules/
 # Env
 .env
 .env.local
+
+# Chroma local database
+traffic-ai-assistant-Bg/scripts/chroma_db/
+traffic-ai-assistant-Bg/chroma_db/
